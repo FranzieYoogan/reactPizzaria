@@ -1,0 +1,45 @@
+.navbarStyle {
+
+    background-color: black;
+
+}
+
+.ulStyle {
+
+    background-color: black;
+
+}
+
+.menuStyle {
+
+    justify-content: center;
+
+}
+
+
+.anchorStyle {
+
+    color: orange;
+    border-bottom: 2px solid transparent;
+    scroll-behavior: smooth;
+
+}
+
+.anchorStyle:hover, .anchorStyle:focus , .anchorStyle:active {
+
+    color: red;
+    border-bottom: 2px solid red;
+    border-radius: 0px;
+}
+
+/* media */
+
+@media only screen and (max-width: 600px) {
+    
+    .menuStyle {
+
+        justify-content: right;
+    
+    }
+
+}

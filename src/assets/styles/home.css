@@ -1,0 +1,96 @@
+.landing {
+
+    background: url('/images/pizza.webp');
+    height: 500px;
+    background-size: 100%;
+
+}
+
+.containerButton {
+
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+}
+
+.buttonStyle {
+
+    position: absolute;
+    top: 17em;
+    cursor: pointer;
+
+}
+
+.titleStyle {
+
+    color: white;
+    font-weight: 900;
+    font-size: 30px;
+    margin-top: 4.5em;
+}
+
+.pTitle {
+
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px  black;
+    font-style: italic;
+}
+
+.title2Style {
+
+    text-align: center;
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.container2Style {
+
+    display: flex;
+    justify-content: center;
+    margin-top: 5em;
+}
+
+.containerItems {
+
+    display: flex;
+    padding: 3px;
+    gap: 1em;
+    background-color: orange;
+    border-radius: 2px;
+}
+
+.imgData {
+
+    width: 500px;
+
+}
+
+.containerData1 {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 1em;
+}
+
+.containerData {
+
+    box-shadow: 0px 0px 4px 0px black;
+    border-radius: 3px;
+
+}
+
+.titlePizzas {
+
+    color: white;
+    font-weight: 900;
+    text-shadow: 2px 2px black;
+
+}
+
+/* media */
+
+@media only screen and (max-width: 600px) {
+ 
+  }
