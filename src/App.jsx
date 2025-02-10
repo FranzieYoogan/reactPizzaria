@@ -10,6 +10,7 @@ function App() {
   const [error, setError] = useState(null)
 
   const cardapioSection = useRef(null)
+  const containerDataRef = useRef(null)
 
   const scrollToCardapio = () => {
  
@@ -20,6 +21,30 @@ function App() {
     }
 
   }
+
+  const handleScroll = () => {
+
+    const cardapioTop = cardapioSection.current.getBoundingClientRect().top 
+    const windowHeight = window.innerHeight
+
+    if(cardapioTop <= windowHeight * 0.75) {
+
+      containerDataRef.current.classList.add('visible')
+      window.removeEventListener('scroll',handleScroll)
+    } 
+
+  }
+
+  useEffect(() => {
+
+    window.addEventListener('scroll',handleScroll)
+    return() => {
+
+      window.removeEventListener('scroll',handleScroll)
+
+    }
+
+  },[])
 
   useEffect(() => {
 
@@ -66,28 +91,28 @@ function App() {
     <div>
     <h1 className='title2Style'>Cardápio</h1>
     </div>
-  
+    
+    <div ref={containerDataRef} className='containerData'>
 
-      <div className='containerData1'>
-
-    <ul className='containerData'>
+    
       {data && data.map(pizzas => (
-
-        <li key={pizzas._id}>
+ <div className='containerData1' key={pizzas._id}>
+        
 
           <img className='imgData' src={pizzas.url} alt="" />
 
           <div className='containerItems'>
           <h1 className='titlePizzas'>{pizzas.name} - </h1>  <h1 className='titlePizzas'>Preço {pizzas.price}</h1>
           </div>
-          
-        </li>
+          </div>
+       
 
       ))}
-</ul>
-      </div>
+</div>
 
       </div>
+
+      
       </section>
 
     </>
