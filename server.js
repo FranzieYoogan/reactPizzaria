@@ -11,7 +11,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 // MongoDB connection URI (use your own MongoDB URI here)
-const mongoURI = 'mongodb+srv://franzieyoogan2:admin357159@cluster0.guw8a4s.mongodb.net/pizzaria'; // Replace with your MongoDB URI
+const mongoURI = 'yourKluster'; // Replace with your MongoDB URI
 
 // Connect to MongoDB
 mongoose.connect(mongoURI, {
