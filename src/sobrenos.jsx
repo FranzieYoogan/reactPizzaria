@@ -6,7 +6,7 @@ function Sobrenos() {
 
         <>
 
-        <section className='containerAll'>
+        <section className='containerAll' id='sobrenos'>
 
             <div className='containerText'>
 

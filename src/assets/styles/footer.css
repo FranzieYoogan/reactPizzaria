@@ -1,0 +1,30 @@
+.containerFooter {
+
+    background-color: black;
+    margin-top: 5em;
+   height: 50px;
+   display: flex;
+   justify-content: center;
+  align-items: center;
+}
+
+.titleFooter {
+
+    text-align: center;
+    color: orange;
+    font-weight: 900;
+   
+   
+}
+
+.anchorFooter {
+
+    transition: 1s;
+    border-bottom: 1px solid transparent;
+}
+
+.anchorFooter:hover {
+    transition: 1s;
+border-bottom: 1px solid orange;
+
+}

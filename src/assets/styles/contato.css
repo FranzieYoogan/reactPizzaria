@@ -1,0 +1,64 @@
+.titleContato {
+
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.pContato {
+
+    text-align: center;
+    font-style: italic;
+    
+
+}
+
+.containerContato {
+
+    margin-top: 5em;
+
+}
+
+.containerItemsContato {
+
+   display: grid;
+   grid-template-columns: 30% 20% 35%;
+   gap: 1em;
+   margin: 3em 0 0 3em;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerSpanContato {
+
+    display: flex;
+    gap: 0.5em;
+    width: 350px;
+
+}
+
+.containerSpanContato2 {
+
+    display: flex;
+    gap: 0.5em;
+
+}
+
+.spanContatoStyle {
+
+    font-weight: bold;
+
+}
+
+@media only screen and (max-width: 600px) {
+    .containerItemsContato {
+
+     display: block;
+  
+     }
+     .containerSpanContato {
+        margin-top: 1em;
+        margin-bottom: 1em;
+
+     }
+  }

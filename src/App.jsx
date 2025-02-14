@@ -3,6 +3,8 @@ import Header from './header'
 import './assets/styles/home.css'
 import Home from './home'
 import Sobrenos from './sobrenos'
+import Contato from './contato'
+import Footer from './footer'
 
 function App() {
  
@@ -14,6 +16,9 @@ function App() {
       <Header></Header>
     <Home></Home>
       <Sobrenos></Sobrenos>
+      <Contato></Contato>
+      <Footer></Footer>
+
     </>
   )
 }
