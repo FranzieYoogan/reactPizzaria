@@ -6,7 +6,7 @@ function Contato() {
 
         <>
 
-            <section className="containerContato">
+            <section id='contato' className="containerContato">
 
                 <div>
 
